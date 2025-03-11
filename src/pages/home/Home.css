@@ -1,0 +1,115 @@
+#hero h3 {
+  font-weight: bold; 
+  line-height: 100%; 
+  text-align: center; 
+  text-decoration: none; 
+  font-size: 56px; 
+}
+
+#hero p {
+color: #4A4A4A;
+text-align: center;
+padding: 30px 5px;
+margin-bottom: -20px;
+margin-top: 25px;
+}
+
+.btn-book-now{
+margin-top: 15px;
+margin-bottom: 30px;
+}
+.btn-explore-now {
+margin-top: 41px;
+}
+.btn-book-now,.btn-explore-now {
+  background: #000;
+  border: 0;
+  border-radius: 0px;
+  color: white;
+  text-align: center;
+  width: 220px;
+  height: 54px;
+  font-size: 18px;
+}
+
+.carousel-indicators [data-bs-target] {
+box-sizing: content-box;
+flex: 0 1 auto;
+width: 5px;
+height: 5px;
+padding: 0;
+margin-right: 3px;
+margin-left: 3px;
+text-indent: -999px;
+cursor: pointer;
+border: solid 0.5px #fff;
+border-radius: 50%;
+background-color: transparent;
+}   
+
+.carousel-indicators .active {
+background-color: white; 
+}
+
+.col-md-12 {
+display: flex;
+flex-direction: column;
+justify-content: center; 
+align-items: center;     
+text-align: center;      
+}
+
+#services{
+padding-top: 84px;
+padding-bottom: 84px;
+}
+
+#services img{
+max-width: 100%;
+height: auto;
+}
+#services div.row{
+margin-top: 40px;
+}
+
+a.explore-now{
+font-size: 20px;
+color: #fb7902; 
+text-decoration: none; 
+display: flex;
+align-items: center;
+transition: color 0.3s ease;
+gap:10px;
+}
+
+.col-md-4 p{
+font-size: 32px;
+width: 410px;
+height: 38px;
+text-align: left;
+margin-top: 24px;
+}
+
+#services h4{
+font-size: 48px;
+text-align: left;
+text-decoration: none;
+}
+
+h3 span, h4 span{
+color: #fb7902
+}
+
+.btn{
+background: #bce3eb;
+}
+
+.slick-dots {
+  display: flex !important;  /* Postavi flexbox */
+  justify-content: center;  /* Centriraj točkice */
+  gap: 8px;  /* Razmak između njih */
+}
+
+.slick-dots li {
+  display: inline-block; /* Drži ih u istom redu */
+}

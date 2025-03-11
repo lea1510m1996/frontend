@@ -1,0 +1,57 @@
+.categoryName {
+    display: inline-block;
+    padding: 10px;
+    width: auto; /* Ako nije potrebna fiksna širina */
+}
+
+.shop .categoryName {
+    padding: 10px;
+}
+
+.shop .categoryName h1 {
+    font-size: 18px;
+    font-weight: bold;
+    background-image: url(https://placehold.co/200x300);
+    background-size: cover;
+    line-height: 140px;
+    text-align: center;
+    padding: 20px; /* Dodaj padding za unutarnji prostor unutar h1 */
+}
+
+.shop .slick-prev::before, .shop .slick-next::before {
+    color: #000;
+}
+
+.slick-slide {
+    margin: 0px 5px;
+    /* Ne postavljaj width na auto */
+}
+
+.slick-slider {
+    width: 100%;
+}
+
+.shop .categories {
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.shop .slick-dots {
+    bottom: -30px;
+}
+.shop .slick-dots li button::before {
+    font-size: 10px;
+}
+
+@media (min-width: 1200px) {
+    .categoryName {
+        font-size: 1.5rem;  /* Povećaj font na većim ekranima */
+        padding: 20px;      /* Dodaj više prostora */
+    }
+}
+
+@media (max-width: 768px) {
+    .categoryName {
+        font-size: 1.2rem;
+    }
+}

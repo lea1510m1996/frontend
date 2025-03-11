@@ -1,0 +1,146 @@
+footer {
+    width: 100%;
+    background-color: #fffbf3;
+    color: #4a4a4a;
+    padding: 20px 0px;
+}
+
+.footer-container {
+  display: flex;
+  max-width: 1320px;
+  justify-content: space-between;
+  gap: 20px;
+  margin: 0 auto; 
+  padding: 20px;
+}
+
+.footer-section {
+  width: 22%; /* Svaka sekcija zauzima jednaku širinu */
+}
+.footer-section ul li {
+    margin-bottom: 12px; /* Povećan razmak za bolju čitljivost */
+}
+
+.footer-section h4, .footer-section p {
+    margin-bottom: 10px;
+}
+
+.footer-section h3 {
+    font-size: 30px;
+    color: #1e1e1e;
+}
+
+.newsletter {
+  width: 34%;
+}
+
+
+/* Naslovi sekcija */
+.footer-section h4 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: #fcad61; 
+    font-weight: bold;
+}
+
+/* Popis linkova unutar sekcija */
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #1E1E1E;
+    font-size: 23px;
+}
+
+/* Stilizacija forme */
+.footer-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 15px 0;
+}
+
+.footer-section input {
+    padding: 10px 12px;
+    border: 1px solid #c4c4c4;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+    background: #fffbf3;
+    color: #c4c4c4;
+}
+
+.footer-section button {
+    padding: 10px 20px;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border: none;
+    border-radius: 0;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 15px;
+}
+p.contact-info {
+    font-size: 24px;
+    font-weight: 300;
+    color: #1e1e1e;
+    border: 0px;
+    width: 100%;
+}
+/* Tekstualni podaci ispod forme */
+.footer-bottom p {
+    margin: 5px 0;
+    font-size: 20px;
+}
+
+/* Donji dio footera */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 20px;
+    max-width: 1320px;
+    padding: 20px;
+}
+
+/* Logo dio u footeru */
+.footer-logo {
+    font-weight: bold;
+    font-size: 20px;
+}
+ p.tagline {
+    font-size: 20px;
+    font-weight: bold;
+    width: 235px;
+}
+.footer-logo span {
+    color: #fb7902; /* Narančasti naglasak za BEAUTY */
+}
+
+/* Istaknuti tekstovi */
+.highlight {
+    color: #fb7902;
+}
+
+@media (max-width: 768px) {
+    footer {
+        padding: 15px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    footer {
+        padding: 10px;
+        font-size: 12px;
+    }
+}
