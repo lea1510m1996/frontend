@@ -7,6 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 import './Shop.css';
 
+
 const Shop = () => {
 
     const [categories, setCategories] = useState([]);    
@@ -106,13 +107,14 @@ const Shop = () => {
                 </Slider>
             </div>
         <div>
-        <SliderProducts category="smartphones" limit="6" />
-        <SliderProducts category="beauty" limit="6" />
+        <SliderProducts category="smartphones" limit="6" sectionName="Najprodavaniji proizvodi"/>
+        <SliderProducts category="beauty" limit="6" sectionName="Najbolje ocjenjeni proizvodi" />
         </div>
-
+       
+     
         </div>
         </>
     );
-}
+    }
 
 export default Shop;

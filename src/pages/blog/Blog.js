@@ -9,13 +9,14 @@ import PostAuthor from "../Meta/PostAuthor";
 const Blog = () => {
 
     const [posts, setPosts] = useState([]);
+    const REACT_APP_URL = process.env.REACT_APP_URL;
 
     useEffect(
         () => {
-        fetch('https://frontend.internetskimarketing.eu/backend/wp-json/wp/v2/posts')
+        fetch(REACT_APP_URL + '/wp-json/wp/v2/posts')
             .then(response => response.json())
             .then(data => setPosts(data));
-         }, []
+         }, [REACT_APP_URL]
     );
     
     return(
