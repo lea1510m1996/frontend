@@ -57,7 +57,7 @@ const Header = () => {
             </div>
             <div class="d-flex align-items-center">
           <Link to="#" className="navbar-link me-3"><i className="fa fa-search"></i></Link>
-          <Link to="#" className="navbar-link me-3"><i className="fa fa-shopping-cart"></i></Link>
+          <Link to="/shop" className="navbar-link me-3"><i className="fa fa-shopping-cart"></i></Link>
          
           </div>
 

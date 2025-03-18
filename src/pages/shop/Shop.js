@@ -4,6 +4,8 @@ import SliderProducts from "./SliderProducts";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 
 import './Shop.css';
 
@@ -110,7 +112,10 @@ const Shop = () => {
         <SliderProducts category="smartphones" limit="6" sectionName="Najprodavaniji proizvodi"/>
         <SliderProducts category="beauty" limit="6" sectionName="Najbolje ocjenjeni proizvodi" />
         </div>
-       
+        <Link to="/checkout" className="checkout-link">
+            <FontAwesomeIcon icon={faShoppingCart} className="icon" />
+            <span>Idi na Checkout</span>
+        </Link>
      
         </div>
         </>

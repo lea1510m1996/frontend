@@ -43,6 +43,123 @@
     font-size: 10px;
 }
 
+.checkout {
+    padding: 20px;
+    display: inline;
+}
+
+.checkout-form {
+    display: inline;
+}
+.input {
+    margin: 10px;
+    background-color: aliceblue;
+}
+
+.checkout-link {
+    color: black; /* Postavlja tekst na crnu boju */
+    font-size: 1.1rem; /* Povećava veličinu fonta */
+    text-decoration: none; /* Uklanja crtu ispod teksta */
+    display: flex; /* Postavlja ikonu i tekst u liniji */
+    align-items: center; /* Poravnava ikonu i tekst vertikalno */
+    justify-content: flex-end; /* Poravnava sadržaj na desnu stranu */
+    width: 100%;
+}
+
+.checkout-link .icon {
+    margin-right: 8px; /* Daje prostor između ikone i teksta */
+}
+.checkout {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.checkout h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.checkout .table {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.checkout .table th, .checkout .table td {
+    text-align: left;
+    padding: 10px;
+}
+
+.checkout .quantity-input {
+    width: 60px;
+    padding: 5px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.checkout .total-price {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.checkout .form-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.checkout .form-group {
+    flex: 1;
+}
+
+.checkout .form-input {
+    width: 100%;
+    padding: 8px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.checkout .form-row .form-group:nth-child(odd) {
+    margin-right: 10px;
+}
+
+.checkout .btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+
+.checkout .btn-danger {
+    background-color: red;
+    color: white;
+}
+
+.checkout .btn-success {
+    background-color: green;
+    color: white;
+}
+
+.checkout .btn-sm {
+    padding: 5px 10px;
+}
+.checkout .quantity-input {
+    width: 60px;
+    padding: 5px;
+    font-size: 1rem;
+    text-align: center;
+    background-color: white;  /* Pozadina polja za količinu */
+    color: black;  /* Boja slova za količinu */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.checkout .quantity-input:focus {
+    outline: none;
+    border-color: #007bff;
+}
 @media (min-width: 1200px) {
     .categoryName {
         font-size: 1.5rem;  /* Povećaj font na većim ekranima */
