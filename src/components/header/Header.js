@@ -3,13 +3,12 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import "./Header.css";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
-
 const Header = () => {
   const [username, setUsername] = useState(null);
   const location = useLocation();
   const navigate = useNavigate();
-
   const [menu, setMenu] = useState(false);
+
   const toggleMenu = () => {
     setMenu(!menu);
   };
@@ -36,40 +35,52 @@ const Header = () => {
             <Link className="navbar-brand" to="/">
               <img src="img/Logo.png" alt="serene beauty" />
             </Link>
-            <button onClick={toggleMenu} className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button onClick={toggleMenu} className="navbar-toggler" type="button">
               <i className="fa fa-bars"></i>
             </button>
             <div className={`collapse navbar-collapse ${menu ? 'show' : ''}`} id="navbarNavAltMarkup">
-              <ul className="navbar-nav ms-auto">
+              <ul className="navbar-nav">
                 <li className="nav-item">
-                  <Link className="nav-link" to="/">Home</Link>
+                  <Link className="nav-link" to="/" onClick={toggleMenu}>Home</Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/services">Services</Link>
+                  <Link className="nav-link" to="/services" onClick={toggleMenu}>Services</Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/aboutus">About Us</Link>
+                  <Link className="nav-link" to="/aboutus" onClick={toggleMenu}>About Us</Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/contactus">Contact Us</Link>
+                  <Link className="nav-link" to="/contactus" onClick={toggleMenu}>Contact Us</Link>
+                </li>
+                <li className="nav-item d-lg-none">
+                  <Link to="#" className="nav-link" onClick={toggleMenu}><i className="fa fa-search"></i></Link>
+                </li>
+                <li className="nav-item d-lg-none">
+                  <Link to="/shop" className="nav-link" onClick={toggleMenu}><i className="fa fa-shopping-cart"></i></Link>
+                </li>
+                <li className="nav-item d-lg-none">
+                  {username ? (
+                    <button onClick={logout} className="btn">Welcome, {username}</button>
+                  ) : (
+                    <Link to="/login" className="btn btn-primary" onClick={toggleMenu}>Login</Link>
+                  )}
                 </li>
               </ul>
             </div>
-            <div class="d-flex align-items-center">
-          <Link to="#" className="navbar-link me-3"><i className="fa fa-search"></i></Link>
-          <Link to="/shop" className="navbar-link me-3"><i className="fa fa-shopping-cart"></i></Link>
-         
+            <div className="d-none d-lg-flex align-items-center">
+              <Link to="#" className="navbar-link me-3"><i className="fa fa-search"></i></Link>
+              <Link to="/shop" className="navbar-link me-3"><i className="fa fa-shopping-cart"></i></Link>
+              {username ? (
+                <button onClick={logout} className="btn">Welcome, {username}</button>
+              ) : (
+                <Link to="/login" className="btn btn-primary">Login</Link>
+              )}
+            </div>
           </div>
-
-          {username ? (
-                      <button onClick={logout} className="btn">Welcome, {username}</button>
-                    ) : (
-                      <Link to="/login" className="btn btn-primary">Login</Link>
-                    )}
+        </nav>
+      </header>
     </div>
-      </nav>
-    </header>
-    </div>
-    );
+  );
 };
-export default Header; 
+
+export default Header;
