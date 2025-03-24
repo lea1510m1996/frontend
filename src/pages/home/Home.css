@@ -100,10 +100,6 @@ h3 span, h4 span{
 color: #fb7902
 }
 
-.btn{
-background: #bce3eb;
-}
-
 .slick-dots {
   display: flex !important;  /* Postavi flexbox */
   justify-content: center;  /* Centriraj točkice */
@@ -112,4 +108,9 @@ background: #bce3eb;
 
 .slick-dots li {
   display: inline-block; /* Drži ih u istom redu */
+}
+img.home {
+  height: 650px;
+  width: 100%;
+  padding: 50px;
 }

@@ -1,18 +1,12 @@
 import React from "react";
 import "./Footer.css";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
-import { faFacebook, faInstagram, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons'
 
 
 
 const Footer = () => {
     return (
         <div>
-             <div>
-                <a href="/"><FontAwesomeIcon icon={faFacebook} style={{ width: "20px", color: "black", alignItems:"center"}} /></a>
-                <a href="/"><FontAwesomeIcon icon={faCoffee} style={{ width: "20px", color: "black", alignItems:"center"}} /></a>
-                </div>
+            <footer>
             <div className="footer-container">
                 <div class="footer-section">
                     <h4>Brand</h4>
@@ -62,7 +56,9 @@ const Footer = () => {
                 <p class="tagline">Where <span>Tranquility</span> Meets
                     <span>Transformation.</span></p>
             </div>
+            </footer>
         </div>
+        
     );
 }
 export default Footer;

@@ -23,9 +23,7 @@ const Home = () => {
           <div className="row">
             <div className="col-md-12">
               <p>Where Tranquility Meets Transformation.</p>
-              <Link to="/Mjenjacnica" className="btn">
-                Mjenjačnica
-              </Link>
+            
               <h3>
                 We show your <span>skin, hair, and body</span> the care and
                 attention they deserve.
@@ -39,16 +37,16 @@ const Home = () => {
       </section>
       <Slider {...settings}>
                 <div>
-                <img src="/img/SlideShow.png" alt="Slide 1" />
+                <img className="home" src="/img/SlideShow.png" alt="Slide 1" />
                 </div>
                 <div>
-                  <img src="/img/SlideShow.png"  alt="Slide 2" />
+                  <img className="home" src="/img/Slideshow2.jpg"  alt="Slide 2" />
                 </div>
                 <div>
-                  <img src="/img/SlideShow.png" alt="Slide 3" />
+                  <img className="home" src="/img/Slideshow3..jpeg" alt="Slide 3" />
                 </div>
                 <div>
-                  <img src="/img/SlideShow.png"  alt="Slide 4" />
+                  <img className="home" src="/img/Slideshow4..jpg"  alt="Slide 4" />
                 </div>
               </Slider>
       <section id="services">
@@ -60,9 +58,9 @@ const Home = () => {
               </h4>
             </div>
             <div className="col-md-4 text-end">
-              <a href="#">
-                <button className="btn-explore-now">Explore Services</button>
-              </a>
+            <Link to="/services">
+  <button className="btn-explore-now">Explore Services</button>
+</Link>
             </div>
           </div>
         </div>

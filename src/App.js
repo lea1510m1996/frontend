@@ -16,7 +16,6 @@ import Countries from './pages/countries/Countries';
 import SingleCountry from './pages/countries/SingleCountry';
 import Shop from './pages/shop/Shop';
 import ProductCard from './pages/shop/ProductCard';
-import CartPage from './pages/shop/CartPage';
 import CheckoutPage from './pages/shop/CheckoutPage';
 import { Route, Routes, BrowserRouter as Router } from 'react-router-dom';
 
@@ -45,7 +44,6 @@ function App() {
           <Route path="/countries/:id" element={<SingleCountry />} /> {/* Države stranica */}
           <Route path="/shop" element={<Shop />} /> {/* Shop stranica */}
           <Route path="/shop/:id" element={<ProductCard />} /> {/* Shop stranica */}
-          <Route path="/cart" element={<CartPage />} /> {/* Cart stranica */}
           <Route path="/checkout" element={<CheckoutPage />} /> {/* Checkout stranica */}
         </Routes>
         

@@ -5,7 +5,7 @@ body{
 color: var(--prima);
 font-family: "Poppins", serif;
 font-size: 16px;
-  background: #FFFBF2;
+  background: #efdaaa;
 }
 @media (max-width: 768px) {
   .row {

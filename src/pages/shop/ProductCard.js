@@ -37,17 +37,16 @@ const ProductCard = ({ product }) => {
                 <Link to={`/shop/${product.id}`}>
                     <img src={product.thumbnail} className="card-img" alt={product.title} />
                 </Link>
-                <Link to={`/shop/${product.id}`}>
-                    <h4 className="card-title">{product.title}</h4>
-                </Link>
+                {/* Uklonili smo Link oko naziva */}
+                <h4 className="card-title">{product.title}</h4>
                 <p className="card-text">{product.description}</p>
                 <div className="button-container">
                     <p className="product-price"><strong>{product.price.toFixed(2)} EUR</strong></p>
-                    <button onClick={addToCart} className="btn btn-success cart-button"><FontAwesomeIcon icon={faShoppingCart} />Add to Cart</button>
+                    <button onClick={addToCart} className="btn btn-success cart-button"><FontAwesomeIcon icon={faShoppingCart} /> Add to Cart</button>
                 </div>
                 {addedToCart && (
                     <div className="cart-notification">
-                        ✅ Proizvod je dodan u košaricu! <Link to="/cart">Pogledaj košaricu</Link>
+                        ✅ Proizvod je dodan u košaricu! <Link to="/checkout">Pogledaj košaricu</Link>
                     </div>
                 )}
             </div>

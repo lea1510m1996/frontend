@@ -1,3 +1,191 @@
 p {
     color: #4A4A4A;
     }
+
+.about-us {
+    display: block;
+    margin: 0 auto;
+    width: 1024px;
+}
+.video-section {
+        margin: 0;
+        padding-top: 20x;
+        padding-bottom: 20px;
+        float: right;
+    }
+
+span {
+    color: #fb7902;
+}
+
+iframe.yt {
+    padding: 20px;
+    width: 1024px;
+    height: 540px;
+    margin: auto;
+}
+
+.quote {
+    padding: 40px 20px;
+    text-align: center;
+        display: flex;
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
+        align-items: center;
+}
+
+.custom-text {
+    flex: auto;
+    padding-left: 60px;
+    font-size: 16px;
+    text-align: left;
+}
+
+.text-about {
+    line-height: 150%;
+    letter-spacing: 0.5px;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 20px;
+    font-size: 24px;
+}
+
+hr {
+    padding: 10px;
+    border: none;
+}
+
+img.bs {
+    width: 100%;
+    padding: 15px;
+}
+.ceo-section {
+    border: 1px solid;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    background-color: #f8f5f0; /* Bež pozadina */
+    padding: 50px;
+}
+
+.ceo {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.ceo-info {
+    padding-left: 50px;
+    max-width: 500px;
+}
+
+.ceo-info h3 {
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #777;
+}
+
+.ceo-info h2 {
+    font-size: 42px;
+    font-weight: bold;
+    margin-top: 5px;
+    color: #000;
+}
+
+.ceo-info p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.award {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    position: relative;
+}
+
+.award li {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    position: relative;
+    margin-bottom: 30px;
+    padding-left: 10px;
+}
+
+.award li:last-child {
+    margin-bottom: 0;
+}
+
+.number {
+    background-color: #000;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 0px;
+    min-width: 40px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+}
+
+.award li:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    left: 27px; /* Pomeraj liniju na sredinu */
+    top: 40px;
+    height: 60px;
+    width: 2px;
+    background: repeating-linear-gradient(
+        to bottom,
+        #ccc,
+        #ccc 5px,
+        transparent 5px,
+        transparent 10px
+    );
+}
+
+.award h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #000;
+    display: inline-block;
+}
+
+.award span {
+    display: flex;
+    gap: 5px;
+    padding-left: 10px;
+}
+
+@media (max-width: 768px) {
+    .ceo-section {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .ceo-info {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .award li {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .award li::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+img.ceo-image {
+    width: 500px;
+}
