@@ -114,3 +114,108 @@ img.home {
   width: 100%;
   padding: 50px;
 }
+
+.booknow-container {
+  background-image: url('https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/serene-beauty-of-a-native-american-woman-carlos-diaz.jpg');
+  background-position: center;
+  background-size: cover; /* Izbjegava se podjela slike */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.booknow-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/serene-beauty-of-a-native-american-woman-carlos-diaz.jpg');
+  background-size: contain; /* Smanjena pozadinska slika */
+  background-position: center;
+  opacity: 0.5;
+  z-index: -1;
+}
+.booknow-form {
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 40px;
+  border-radius: 0; /* Border radius postavljen na 0 */
+  max-width: 700px;
+  width: 100%;
+  color: #fff;
+}
+
+.form-title, .form-subtitle {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.form-title {
+  color: #f0f0f0; /* Svijetlija boja za naslov */
+}
+
+.form-subtitle {
+  color: #ccc; /* Svijetlija boja za podnaslov */
+  font-size: 14px;
+}
+
+.form-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #444;
+  background-color: transparent;
+  color: #fff;
+  border-radius: 0; /* Border radius postavljen na 0 */
+}
+
+.notes-input {
+  height: 100px;
+  resize: none;
+  margin-bottom: 20px;
+}
+
+.submit-button {
+  background-color: #fff;
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #000;
+  color: #fff; /* Bijela slova na hover */
+}
+
+.calendar-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.calendar-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+  color: #fff;
+}
+
+.calendar-popup {
+  position: absolute;
+  bottom: -125px;
+  left: 0;
+  z-index: 9999;
+  padding: 10px;
+}

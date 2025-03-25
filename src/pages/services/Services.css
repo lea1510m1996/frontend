@@ -1,4 +1,99 @@
-p {
-    color: #4A4A4A;
+#service {
+    background-color: #FFFBF2;
+    padding: 40px;
+}
 
+#service h1 {
+    text-align: center;
+    font-size: 48px;
+    color: #000;
+    margin-bottom: 30px;
+}
+
+#service h1 span {
+    color: #FB7902;
+}
+
+h4 {
+    font-size: 30px;
+    color: #FB7902;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+}
+
+.list li {
+    font-size: 22px;
+    color: black;
+    margin-bottom: 20px;
+    cursor: pointer;
+    position: relative; /* Keep this relative for dropdown positioning */
+}
+
+.list li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.service {
+    text-align: left;
+    padding: 20px;
+}
+
+.service-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Description box */
+.service-description {
+    font-size: 15px;
+    color: black;
+    background: #e9dbbd;
+    padding: 15px;
+    width: 100%;
+    max-width: 400px;
+    max-height: 300px;
+    margin-top: 10px; 
+    clear: both; 
+    border-radius: 8px;
+    overflow-y: auto;
+}
+
+/* Dropdown Content */
+.dropdown-content {
+    position: relative;
+    top: 0; 
+    left: 100px; 
+    z-index: 10;
+    padding: 10px;
+    border-radius: 8px;
+    width: 400px;
+    box-sizing: border-box;
+    display: none; 
+    overflow: hidden; 
+}
+
+/* Show the dropdown when hovering over the li */
+.list li:hover .dropdown-content {
+    display: block;
+}
+
+@media screen and (max-width: 768px) {
+    .dropdown-content {
+        margin-top: 10px;
+        max-height: 300px;
+        overflow-y: auto;
     }
+}

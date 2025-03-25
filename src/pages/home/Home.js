@@ -28,9 +28,9 @@ const Home = () => {
                 We show your <span>skin, hair, and body</span> the care and
                 attention they deserve.
               </h3>
-              <a href="#">
-                <button className="btn-book-now">Book Now</button>
-              </a>
+              <Link to="/booknow">
+              <button className="btn-book-now">Book Now</button>
+              </Link>
             </div>
           </div>
         </div>

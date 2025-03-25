@@ -2,15 +2,22 @@
     display: flex;
     justify-content: space-around;
     padding: 40px;
-    max-width: 100%;
     margin: auto;
 }
+
+.contact 
+    {
+        padding: 0px 15px 0px 15px;
+    }
+
 
 .contact-info, .contact-form {
     border: 0.1px solid #c4c4c4;
     border-radius: 0px;
     width: 50%;
     padding: 20px;
+}
+
 
 h2 {
     margin-bottom: 20px;
@@ -108,12 +115,10 @@ button:hover {
 }
 .contact-info {
     list-style: none;
-    padding: 0;
     margin: 0;
-    width: 100%;
     border: none;
-    }
-} 
+    background: #F8F4EC;
+ }
 
 .contact-info li div {
     margin-right: 10px; /* Razmak između ikone i teksta */
@@ -137,6 +142,9 @@ button:hover {
     color: #605F5F;
     transition: color 0.3s ease;
 }
+.contact-info i:hover {
+        transform: scale(1.1);
+    }
 p span {
     color: #FB7902;
 } 

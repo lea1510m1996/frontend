@@ -13,7 +13,7 @@ const Contactus = () => {
         <div class="col-md-6 contact-info">
             <h2>Contact Information</h2>
             <p>Feel free to reach out to us for appointments, inquiries, or to experience the tranquility of Serene Beauty. We're here to make your beauty journey as serene as possible.</p>
-        <ul class="contact-info">
+        <ul class="contact-inf">
   <li>
     <div><i class="fa-solid fa-location-dot"></i></div>
     <a href="/">1901 Thornridge Cir. Shiloh, Hawaii 81063, USA</a>

@@ -130,6 +130,7 @@
 .checkout .btn {
     padding: 10px 20px;
     font-size: 1rem;
+    color:#ffffff
 }
 
 .checkout .btn-danger {
@@ -238,7 +239,7 @@
 }
 
 .productCard .cart-button {
-    background-color: #28a745;
+    background-color: #fb7902;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -248,13 +249,12 @@
 }
 
 .productCard .cart-button:hover {
-    background-color: #218838;
+    background-color: #999;
 }
 
-/* Obavijest o dodanom proizvodu */
 .cart-notification {
     font-size: 1rem;
-    color: #28a745;
+    color: #000;
     text-align: center;
     margin-top: 15px;
     position: absolute; /* Pozicioniramo obavijest iznad kartice */
@@ -272,12 +272,14 @@
 .cart-notification a {
     color: #007bff;
     text-decoration: none;
+    font-size: 14px;
 }
 
 .cart-notification a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 .checkout-link {
+    margin: 15px;
     width: 300px;
     display: inline-flex;
     align-items: center;

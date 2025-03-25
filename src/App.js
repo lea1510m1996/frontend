@@ -18,6 +18,7 @@ import Shop from './pages/shop/Shop';
 import ProductCard from './pages/shop/ProductCard';
 import CheckoutPage from './pages/shop/CheckoutPage';
 import { Route, Routes, BrowserRouter as Router } from 'react-router-dom';
+import Booknow from './pages/home/Booknow';
 
 
 function App() {
@@ -45,6 +46,7 @@ function App() {
           <Route path="/shop" element={<Shop />} /> {/* Shop stranica */}
           <Route path="/shop/:id" element={<ProductCard />} /> {/* Shop stranica */}
           <Route path="/checkout" element={<CheckoutPage />} /> {/* Checkout stranica */}
+          <Route path="/booknow" element={<Booknow />} /> {/* Booknow stranica */}
         </Routes>
         
         

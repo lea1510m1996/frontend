@@ -25,6 +25,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 18px;
   margin-left: 15px;
   margin-right: 15px;
+  text-decoration: none;
 }
 
 .navbar-nav .nav-link:hover {
@@ -47,7 +48,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-toggler {
-  z-index: 1060; /* Osigurava da se meni nalazi iznad ostalog sadržaja */
+  z-index: 1060; 
 }
 
 .collapse.navbar-collapse {
@@ -55,7 +56,10 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: row;
   gap: 15px;
 }
-
+.phone-number {
+  padding: 5px;
+  font-weight: 500;
+}
 @media (max-width: 991px) {
   /* Za srednje ekrane i manje, meni se prikazuje jedan ispod drugog */
   .navbar-collapse {
@@ -130,60 +134,4 @@ h1, h2, h3, h4, h5, h6 {
   .d-lg-none {
       display: block;
   }
-}
-/* SEARCH BOX STILOVI */
-.search-box {
-  position: absolute;
-  top: 100%;
-  right: 0;
-  background: white;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 250px;
-  z-index: 999;
-}
-
-.search-input {
-  background-color: #CECCCC;
-  width: 100%;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 14px;
-}
-
-.search-results {
-  list-style: none;
-  padding: 0;
-  margin-top: 10px;
-  max-height: 200px;
-  overflow-y: auto;
-}
-
-.search-results li {
-  padding: 8px;
-  font-size: 14px;
-  color: black;
-  cursor: pointer;
-  border-bottom: 1px solid #eee;
-}
-
-.search-results li:last-child {
-  border-bottom: none;
-}
-
-/* Osvijetljeni rezultati pretrage */
-.search-results li mark {
-  background: #ff6b6b; /* Koraljno plava */
-  color: white;
-  font-weight: bold;
-  padding: 2px 4px;
-  border-radius: 3px;
-}
-
-/* Hover efekat */
-.search-results li:hover {
-  background: #f5f5f5;
 }
