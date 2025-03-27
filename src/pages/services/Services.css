@@ -53,10 +53,9 @@ h4 {
 .service-img img {
     max-width: 100%;
     height: auto;
-    border-radius: 10px;
+    
 }
 
-/* Description box */
 .service-description {
     font-size: 15px;
     color: black;
@@ -71,7 +70,6 @@ h4 {
     overflow-y: auto;
 }
 
-/* Dropdown Content */
 .dropdown-content {
     position: relative;
     top: 0; 
@@ -85,7 +83,6 @@ h4 {
     overflow: hidden; 
 }
 
-/* Show the dropdown when hovering over the li */
 .list li:hover .dropdown-content {
     display: block;
 }
