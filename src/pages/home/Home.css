@@ -219,3 +219,146 @@ img.home {
   z-index: 9999;
   padding: 10px;
 }
+
+/* Responzivnost za male ekrane */
+@media (max-width: 768px) {
+  #hero h3 {
+    font-size: 30px;
+  }
+
+  #hero p {
+    font-size: 16px;
+  }
+
+  .btn-book-now,
+  .btn-explore-now {
+    width: 200px;
+    height: 45px;
+    font-size: 16px;
+  }
+
+  #services {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .col-md-4 p {
+    font-size: 24px;
+    width: 100%;
+  }
+
+  #services h4 {
+    font-size: 36px;
+  }
+
+  img.home {
+    height: 400px;
+    padding: 20px;
+  }
+
+  .booknow-container {
+    padding: 10px;
+  }
+
+  .booknow-form {
+    padding: 20px;
+  }
+
+  .form-title,
+  .form-subtitle {
+    font-size: 16px;
+  }
+
+  .form-input {
+    padding: 8px;
+  }
+
+  .notes-input {
+    height: 80px;
+  }
+
+  .submit-button {
+    font-size: 16px;
+  }
+  .col-md-4 p {
+    font-size: 18px;
+    width: 100%;
+    text-align: center;  /* Dodano centriranje teksta */
+    margin: 10px 0;  /* Dodano razmicanje između tekstova */
+  }
+  
+  .col-md-4 {
+    margin-bottom: 20px; /* Razmak između kolona na manjim ekranima */
+  }
+}
+
+/* Responzivnost za vrlo male ekrane (mobilni uređaji) */
+@media (max-width: 480px) {
+  #hero h3 {
+    font-size: 24px;
+  }
+
+  #hero p {
+    font-size: 14px;
+  }
+
+  .btn-book-now,
+  .btn-explore-now {
+    width: 180px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  #services {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .col-md-4 p {
+    font-size: 20px;
+  }
+
+  #services h4 {
+    font-size: 30px;
+  }
+
+  img.home {
+    height: 350px;
+    padding: 10px;
+  }
+
+  .booknow-container {
+    padding: 5px;
+  }
+
+  .booknow-form {
+    padding: 10px;
+  }
+
+  .form-title,
+  .form-subtitle {
+    font-size: 14px;
+  }
+
+  .form-input {
+    padding: 6px;
+  }
+
+  .notes-input {
+    height: 70px;
+  }
+
+  .submit-button {
+    font-size: 14px;
+  }
+  .col-md-4 p {
+    font-size: 15px;
+    width: 100%;
+    text-align: center;  /* Centriraj tekst na vrlo malim ekranima */
+    margin: 8px 0;  /* Smanjeni razmak */
+  }
+
+  .col-md-4 {
+    margin-bottom: 15px; /* Smanji razmak između kolona */
+  }
+}
