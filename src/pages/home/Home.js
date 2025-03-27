@@ -67,31 +67,25 @@ const Home = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-4">
-              <a href="#">
                 <img src="/img/Explore1.png" alt="Hair Salon Haven" />
-              </a>
               <p>Hair Salon Haven</p>
-              <a href="#" className="explore-now">
-                Explore now <i className="fas fa-arrow-right"></i>
-              </a>
+              <Link to="/services" className="explore-now">
+               Explore now <i className="fas fa-arrow-right"></i>
+              </Link>
             </div>
             <div className="col-md-4">
-              <a href="#">
                 <img src="/img/Explore2.png" alt="Waxing Salon Haven" />
-              </a>
               <p>Waxing Salon Haven</p>
-              <a href="#" className="explore-now">
-                Explore now <i className="fas fa-arrow-right"></i>
-              </a>
+              <Link to="/services" className="explore-now">
+               Explore now <i className="fas fa-arrow-right"></i>
+            </Link>
             </div>
             <div className="col-md-4">
-              <a href="#">
                 <img src="/img/Explore3.png" alt="Skincare Salon Haven" />
-              </a>
               <p>Skincare Salon Haven</p>
-              <a href="#" className="explore-now">
-                Explore now <i className="fas fa-arrow-right"></i>
-              </a>
+              <Link to="/services" className="explore-now">
+              Explore now <i className="fas fa-arrow-right"></i>
+              </Link>
             </div>
           </div>
         </div>
