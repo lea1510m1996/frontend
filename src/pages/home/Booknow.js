@@ -8,24 +8,43 @@ import "react-datepicker/dist/react-datepicker.css";
 const Booknow = () => {
   const [date, setDate] = useState(null);
   const [showCalendar, setShowCalendar] = useState(false);
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    makeupType: '',
+    time: '',
+    notes: ''
+  });
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (!formData.name || !formData.email || !formData.phone || !formData.makeupType || !date || !formData.time) {
+      alert('Please fill in all required fields.');
+      return;
+    }
+    alert('Appointment booked successfully!');
+  };
 
   return (
     <div className="booknow-container">
-      <form className="booknow-form">
+      <form className="booknow-form" onSubmit={handleSubmit}>
         <h2 className="form-title">Makeup Appointment Form</h2>
-        <p className="form-subtitle">
-          Please fill the form below, it will only take 3 minutes
-        </p>
+        <p className="form-subtitle">Please fill the form below, it will only take 3 minutes</p>
 
         <div className="form-row">
-          <input type="text" placeholder="Your Name" className="form-input" />
-          <input type="email" placeholder="Email" className="form-input" />
+          <input type="text" name="name" placeholder="Your Name" className="form-input" required onChange={handleChange} />
+          <input type="email" name="email" placeholder="Email" className="form-input" required onChange={handleChange} />
         </div>
 
         <div className="form-row">
-          <input type="tel" placeholder="Phone" className="form-input" />
-          <select className="form-input">
-            <option>Select Your Makeup Type</option>
+          <input type="tel" name="phone" placeholder="Phone" className="form-input" required onChange={handleChange} />
+          <select name="makeupType" className="form-input" required onChange={handleChange}>
+            <option value="">Select Your Makeup Type</option>
             <option>Bridal</option>
             <option>Evening</option>
             <option>Casual</option>
@@ -43,6 +62,7 @@ const Booknow = () => {
               value={date ? date.toLocaleDateString() : ''}
               readOnly
               className="form-input calendar-input"
+              required
               onClick={() => setShowCalendar(!showCalendar)}
             />
             <FontAwesomeIcon
@@ -54,8 +74,8 @@ const Booknow = () => {
               <div className="calendar-popup">
                 <DatePicker
                   selected={date}
-                  onChange={(date) => {
-                    setDate(date);
+                  onChange={(selectedDate) => {
+                    setDate(selectedDate);
                     setShowCalendar(false);
                   }}
                   inline
@@ -66,9 +86,8 @@ const Booknow = () => {
               </div>
             )}
           </div>
-
-          <select className="form-input">
-            <option>Choose Your Time</option>
+          <select name="time" className="form-input" required onChange={handleChange}>
+            <option value="">Choose Your Time</option>
             {Array.from({ length: 13 }, (_, i) => (
               <option key={i}>{8 + i}:00 {i < 4 ? 'AM' : 'PM'}</option>
             ))}
@@ -76,8 +95,11 @@ const Booknow = () => {
         </div>
 
         <textarea
+          name="notes"
           placeholder="Any Notes For Us"
           className="form-input notes-input"
+          required
+          onChange={handleChange}
         />
 
         <button type="submit" className="submit-button">
@@ -89,4 +111,3 @@ const Booknow = () => {
 }
 
 export default Booknow;
-
